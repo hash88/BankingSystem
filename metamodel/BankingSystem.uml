@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_KR6mMEM9EeeNGYBj7W3T3A" name="BankingSystem" URI="http:///sysc5709/bank.ecore">
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mMUM9EeeNGYBj7W3T3A" name="Bank">
+      <ownedAttribute xmi:id="_KR6mMkM9EeeNGYBj7W3T3A" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mM0M9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mNEM9EeeNGYBj7W3T3A" name="bankId" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mNUM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mNkM9EeeNGYBj7W3T3A" name="description" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mN0M9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mOEM9EeeNGYBj7W3T3A" name="branches" type="_KR6mOkM9EeeNGYBj7W3T3A" isOrdered="true" aggregation="composite" association="_KR6mhUM9EeeNGYBj7W3T3A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mOUM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mOkM9EeeNGYBj7W3T3A" name="Branch">
+      <ownedAttribute xmi:id="_KR6mO0M9EeeNGYBj7W3T3A" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mPEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mPUM9EeeNGYBj7W3T3A" name="branchId" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mPkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mP0M9EeeNGYBj7W3T3A" name="location" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mQEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mQUM9EeeNGYBj7W3T3A" name="phoneNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mQkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mQ0M9EeeNGYBj7W3T3A" name="customers" type="_KR6mSEM9EeeNGYBj7W3T3A" isOrdered="true" aggregation="composite" association="_KR6mX0M9EeeNGYBj7W3T3A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mREM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mRUM9EeeNGYBj7W3T3A" name="employees" type="_KR6md0M9EeeNGYBj7W3T3A" isOrdered="true" aggregation="composite" association="_KR6mg0M9EeeNGYBj7W3T3A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mRkM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mR0M9EeeNGYBj7W3T3A" name="bank" type="_KR6mMUM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mhUM9EeeNGYBj7W3T3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mSEM9EeeNGYBj7W3T3A" name="Customer">
+      <ownedAttribute xmi:id="_KR6mSUM9EeeNGYBj7W3T3A" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mSkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mS0M9EeeNGYBj7W3T3A" name="age" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mTEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mTUM9EeeNGYBj7W3T3A" name="address" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mTkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mT0M9EeeNGYBj7W3T3A" name="phoneNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mUEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mUUM9EeeNGYBj7W3T3A" name="customerType" visibility="public" type="_KR6mW0M9EeeNGYBj7W3T3A" isOrdered="true"/>
+      <ownedAttribute xmi:id="_KR6mUkM9EeeNGYBj7W3T3A" name="branch" type="_KR6mOkM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mX0M9EeeNGYBj7W3T3A"/>
+      <ownedAttribute xmi:id="_KR6mU0M9EeeNGYBj7W3T3A" name="accounts" type="_KR6mYEM9EeeNGYBj7W3T3A" isOrdered="true" aggregation="composite" association="_KR6mZkM9EeeNGYBj7W3T3A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mVEM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mVUM9EeeNGYBj7W3T3A" name="loans" type="_KR6mZ0M9EeeNGYBj7W3T3A" isOrdered="true" aggregation="composite" association="_KR6mcUM9EeeNGYBj7W3T3A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mVkM9EeeNGYBj7W3T3A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mV0M9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mWEM9EeeNGYBj7W3T3A" name="representative" type="_KR6mckM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mhEM9EeeNGYBj7W3T3A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mWUM9EeeNGYBj7W3T3A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mWkM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KR6mW0M9EeeNGYBj7W3T3A" name="CustomerType">
+      <ownedLiteral xmi:id="_KR6mXEM9EeeNGYBj7W3T3A" name="Youth"/>
+      <ownedLiteral xmi:id="_KR6mXUM9EeeNGYBj7W3T3A" name="Adult"/>
+      <ownedLiteral xmi:id="_KR6mXkM9EeeNGYBj7W3T3A" name="Senior"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mX0M9EeeNGYBj7W3T3A" memberEnd="_KR6mQ0M9EeeNGYBj7W3T3A _KR6mUkM9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mYEM9EeeNGYBj7W3T3A" name="Account" isAbstract="true">
+      <ownedAttribute xmi:id="_KR6mYUM9EeeNGYBj7W3T3A" name="accountNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mYkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mY0M9EeeNGYBj7W3T3A" name="balance" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mZEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mZUM9EeeNGYBj7W3T3A" name="customer" type="_KR6mSEM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mZkM9EeeNGYBj7W3T3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mZkM9EeeNGYBj7W3T3A" memberEnd="_KR6mU0M9EeeNGYBj7W3T3A _KR6mZUM9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mZ0M9EeeNGYBj7W3T3A" name="Loan">
+      <ownedAttribute xmi:id="_KR6maEM9EeeNGYBj7W3T3A" name="loanNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6maUM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6makM9EeeNGYBj7W3T3A" name="amount" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6ma0M9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mbEM9EeeNGYBj7W3T3A" name="interestRate" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mbUM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mbkM9EeeNGYBj7W3T3A" name="duration" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mb0M9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mcEM9EeeNGYBj7W3T3A" name="customer" type="_KR6mSEM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mcUM9EeeNGYBj7W3T3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mcUM9EeeNGYBj7W3T3A" memberEnd="_KR6mVUM9EeeNGYBj7W3T3A _KR6mcEM9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mckM9EeeNGYBj7W3T3A" name="Financial_Representative">
+      <generalization xmi:id="_KR6mc0M9EeeNGYBj7W3T3A" general="_KR6md0M9EeeNGYBj7W3T3A"/>
+      <ownedAttribute xmi:id="_KR6mdEM9EeeNGYBj7W3T3A" name="a" type="_KR6mSEM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mhEM9EeeNGYBj7W3T3A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mdUM9EeeNGYBj7W3T3A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KR6mdkM9EeeNGYBj7W3T3A" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6md0M9EeeNGYBj7W3T3A" name="Employee" isAbstract="true">
+      <ownedAttribute xmi:id="_KR6meEM9EeeNGYBj7W3T3A" name="eid" visibility="public" isOrdered="true" isID="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6meUM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mekM9EeeNGYBj7W3T3A" name="ename" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6me0M9EeeNGYBj7W3T3A" name="branch" type="_KR6mOkM9EeeNGYBj7W3T3A" isOrdered="true" association="_KR6mg0M9EeeNGYBj7W3T3A"/>
+      <ownedAttribute xmi:id="_KR6mfEM9EeeNGYBj7W3T3A" name="isCustomer" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mfUM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mfkM9EeeNGYBj7W3T3A" name="eage" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mf0M9EeeNGYBj7W3T3A" name="eaddress" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mgEM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KR6mgUM9EeeNGYBj7W3T3A" name="ephoneNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mgkM9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mg0M9EeeNGYBj7W3T3A" memberEnd="_KR6mRUM9EeeNGYBj7W3T3A _KR6me0M9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mhEM9EeeNGYBj7W3T3A" memberEnd="_KR6mdEM9EeeNGYBj7W3T3A _KR6mWEM9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR6mhUM9EeeNGYBj7W3T3A" memberEnd="_KR6mOEM9EeeNGYBj7W3T3A _KR6mR0M9EeeNGYBj7W3T3A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6mhkM9EeeNGYBj7W3T3A" name="Chequing">
+      <generalization xmi:id="_KR6mh0M9EeeNGYBj7W3T3A" general="_KR6mYEM9EeeNGYBj7W3T3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KR6miEM9EeeNGYBj7W3T3A" name="Saving">
+      <generalization xmi:id="_KR6miUM9EeeNGYBj7W3T3A" general="_KR6mYEM9EeeNGYBj7W3T3A"/>
+      <ownedAttribute xmi:id="_KR6mikM9EeeNGYBj7W3T3A" name="interestRate" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KR6mi0M9EeeNGYBj7W3T3A"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:id="_KR6mjEM9EeeNGYBj7W3T3A">
+      <eAnnotations xmi:id="_KR6mjUM9EeeNGYBj7W3T3A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_KR6mjkM9EeeNGYBj7W3T3A" base_Package="_KR6mMEM9EeeNGYBj7W3T3A" nsPrefix="sysc5709.bank">
+    <annotation>http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore#/'</annotation>
+  </Ecore:EPackage>
+  <Ecore:EClass xmi:id="_KR6mj0M9EeeNGYBj7W3T3A" base_Class="_KR6mMUM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NQEM9EeeNGYBj7W3T3A" base_Property="_KR6mOEM9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR7NQUM9EeeNGYBj7W3T3A" base_Class="_KR6mOkM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NQkM9EeeNGYBj7W3T3A" base_Property="_KR6mQ0M9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NQ0M9EeeNGYBj7W3T3A" base_Property="_KR6mRUM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NREM9EeeNGYBj7W3T3A" base_Property="_KR6mR0M9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR7NRUM9EeeNGYBj7W3T3A" base_Class="_KR6mSEM9EeeNGYBj7W3T3A">
+    <annotation>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot Minimum_Age='self.age >= 16' Youth_Account='self.age >= 16 and self.age &lt; 25 implies self.customerType = CustomerType :: Youth' Adult_Account='self.age >= 25 and self.age &lt; 60 implies self.customerType = CustomerType :: Adult' Senior_Account='self.age >= 60 implies self.customerType = CustomerType :: Senior' Chequing_Account='self.accounts->select(v|v.oclIsKindOf(Chequing))->size() &lt;= 1' Maximum_Youth_Saving='self.customerType = CustomerType :: Youth implies self.accounts->select(v|v.oclIsKindOf(Saving))->size() &lt;= 1' Maximum_Saving='self.accounts->select(v|v.oclIsKindOf(Saving))->size() &lt;= 5' Youth_Saving_Balance='self.customerType = CustomerType :: Youth and self.accounts->select(v|v.oclIsKindOf(Saving))->size() = 1 implies self.accounts->exists(v|v.oclIsKindOf(Saving) and v.balance >= 200)'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_KR7NRkM9EeeNGYBj7W3T3A" base_Property="_KR6mUkM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NR0M9EeeNGYBj7W3T3A" base_Property="_KR6mU0M9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NSEM9EeeNGYBj7W3T3A" base_Property="_KR6mVUM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR7NSUM9EeeNGYBj7W3T3A" base_Property="_KR6mWEM9EeeNGYBj7W3T3A"/>
+  <Ecore:EEnum xmi:id="_KR7NSkM9EeeNGYBj7W3T3A" base_Enumeration="_KR6mW0M9EeeNGYBj7W3T3A"/>
+  <Ecore:EEnumLiteral xmi:id="_KR7NS0M9EeeNGYBj7W3T3A" base_EnumerationLiteral="_KR6mXEM9EeeNGYBj7W3T3A" literal="Youth"/>
+  <Ecore:EEnumLiteral xmi:id="_KR7NTEM9EeeNGYBj7W3T3A" base_EnumerationLiteral="_KR6mXUM9EeeNGYBj7W3T3A" literal="Adult"/>
+  <Ecore:EEnumLiteral xmi:id="_KR70UEM9EeeNGYBj7W3T3A" base_EnumerationLiteral="_KR6mXkM9EeeNGYBj7W3T3A" literal="Senior"/>
+  <Ecore:EClass xmi:id="_KR70UUM9EeeNGYBj7W3T3A" base_Class="_KR6mYEM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR70UkM9EeeNGYBj7W3T3A" base_Property="_KR6mZUM9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR70U0M9EeeNGYBj7W3T3A" base_Class="_KR6mZ0M9EeeNGYBj7W3T3A">
+    <annotation>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot Minimum_Loan_Amount='self.amount>=3000' Youth_Maximum_Loan_Amount='self.customer.customerType = CustomerType::Youth implies self.amount&lt;=25000'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_KR70VEM9EeeNGYBj7W3T3A" base_Property="_KR6mcEM9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR70VUM9EeeNGYBj7W3T3A" base_Class="_KR6mckM9EeeNGYBj7W3T3A"/>
+  <Ecore:EReference xmi:id="_KR70VkM9EeeNGYBj7W3T3A" base_Property="_KR6mdEM9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR70V0M9EeeNGYBj7W3T3A" base_Class="_KR6md0M9EeeNGYBj7W3T3A">
+    <annotation>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot Minimum_Age='self.eage >= 16'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_KR70WEM9EeeNGYBj7W3T3A" base_Property="_KR6me0M9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR70WUM9EeeNGYBj7W3T3A" base_Class="_KR6mhkM9EeeNGYBj7W3T3A"/>
+  <Ecore:EClass xmi:id="_KR70WkM9EeeNGYBj7W3T3A" base_Class="_KR6miEM9EeeNGYBj7W3T3A">
+    <annotation>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot Youth_Interest_Rate='self.customer.customerType = CustomerType::Youth implies self.interestRate = 0.004' Interest_Rate_0='(self.customer.customerType = CustomerType::Adult or self.customer.customerType = CustomerType::Senior) and self.balance &lt; 2000 implies self.interestRate = 0' Interest_Rate_08='(self.customer.customerType = CustomerType::Adult or self.customer.customerType = CustomerType::Senior) and self.balance >= 2000 and self.balance &lt; 5000 implies self.interestRate = 0.008' Interest_Rate_10='(self.customer.customerType = CustomerType::Adult or self.customer.customerType = CustomerType::Senior) and self.balance >= 5000 and self.balance &lt; 10000 implies self.interestRate = 0.01' Interest_Rate_13='self.customer.customerType = CustomerType::Adult and self.balance >= 10000 implies self.interestRate = 0.013' Interest_Rate_15='self.customer.customerType = CustomerType::Senior and self.balance >= 10000 implies self.interestRate = 0.015'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysc5709.bank:Bank xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sysc5709.bank="http:///sysc5709/bank.ecore" xsi:schemaLocation="http:///sysc5709/bank.ecore ../metamodel/bank.ecore" name="bmo">
+  <branches name="bayshore">
+    <customers name="adams"/>
+    <customers name="peter" age="33" customerType="Adult"/>
+  </branches>
+</sysc5709.bank:Bank>

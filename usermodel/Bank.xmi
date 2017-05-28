@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sysc5709.bank:Bank
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sysc5709.bank="http:///sysc5709/bank.ecore"
+    xsi:schemaLocation="http:///sysc5709/bank.ecore ../metamodel/bank.ecore"
+    name="bmo"
+    bankId="1">
+  <branches
+      name="bayshore"
+      branchId="2"
+      location="bayshore">
+    <customers
+        name="adams"
+        age="44"
+        customerType="Adult">
+      <accounts
+          xsi:type="sysc5709.bank:Chequing"
+          accountNumber="222"
+          balance="3000.0"/>
+      <accounts
+          xsi:type="sysc5709.bank:Saving"
+          accountNumber="11"
+          balance="1000.0"/>
+    </customers>
+    <employees
+        xsi:type="sysc5709.bank:Financial_Representative"
+        eid="3"
+        ename="peter"
+        isCustomer="true"
+        eage="33"/>
+    <employees
+        xsi:type="sysc5709.bank:Financial_Representative"
+        eid="4"
+        ename="charles"
+        eage="45"/>
+  </branches>
+</sysc5709.bank:Bank>
